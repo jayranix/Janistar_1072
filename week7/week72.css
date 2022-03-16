@@ -1,0 +1,42 @@
+body{
+    background-color: bisque;
+}
+
+#game-container {
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#game-layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 3px solid rgb(77, 77, 77);
+}
+
+.squares {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid rgb(143, 137, 137);
+}
+
+#squares-layer{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    border-radius: 55px;
+    border: 2px solid rgb(99, 99, 177);
+    background-color: rgb(199, 188, 209);
+
+.red{
+    background-color: red; 
+}
+.blue{
+    background-color: blue; 
+}
+
+.green{
+    background-color: green; 
+}
