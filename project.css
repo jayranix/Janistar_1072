@@ -1,0 +1,88 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+}
+
+#header{
+    grid-column: 1 / span 4;
+}
+
+#project{
+    grid-column: 1 / span 3;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(72, 72, 114);
+}
+
+#font{
+    margin: auto;
+    font-size: large;
+}
+
+@media only screen and (max-width: 768px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap: 10px;
+    }
+}
+
+h1{
+    text-align: center;
+    background-color: beige;
+    font-size: 40px;
+    border: 2px solid rgb(150, 197, 150);
+    padding: 1%;
+    color: rgb(96, 155, 120);
+}
+
+.grid-project{
+    grid-column: 1 / 4;
+}
+
+.grid-project > div{
+    background-color: aliceblue;
+    padding: 2%;
+    text-align: center;
+}
+
+.flex-project1{
+    display: flex;
+    text-align: center;
+}
+.flex-project1 > div{
+    width: 50%;
+    margin: 3%;
+    text-align: center;
+    align-content: center;
+}
+.flex-project2 > div{
+    width: 50%;
+    margin: 3%;
+    text-align: center;
+    align-content: center;
+}
+img{
+    width: 100%;
+}
+.work{
+    width: 200%;
+    border-radius: 20px;
+}
+.resume{
+    width: 50%;
+    border-radius: 20px;
+}
+
+body{
+    background-color: rgb(199, 199, 181);
+}

@@ -1,0 +1,119 @@
+grid-container{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-column: auto;
+}
+#header{
+    grid-column: center;
+}
+
+#main1{
+    grid-column: 2 / span 2;
+}
+
+#project{
+    grid-template-columns: 1/span 3;
+    text-align: left;
+    font-size: 110%;
+    font-weight: lighter;
+    color: blueviolet;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+body{
+    background-color: rgb(178, 200, 233);
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(127, 165, 180);
+    font-size: 50px;
+    border: 2px solid rgb(100, 129, 184);
+    padding: 1%;
+    color: rgb(75, 78, 87);
+}
+
+h4{
+    text-align: left;
+    background-color: rgb(241, 247, 252);
+    border: 2px solid rgb(110, 132, 141);
+    font-size: 20px;
+    padding: 1%;
+    color: rgb(76, 92, 105);
+}
+
+img{
+    width: 50%;
+    border-radius: 30px;
+}
+
+h3{
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+ul{
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+#font{
+    margin: auto;
+    font-size: 300%;
+}
+
+#main1.flex{
+    text-align: center;
+    grid-column: 1 /span 3;
+}
+
+@media only screen and (max-weidth: 768px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-gap: 20px;
+    }
+}
+
+
+#right{
+    text-align: center;
+    grid-column: 1 / span 3;
+    
+@media only screen and (max-width: 480px) {
+	.grid-container {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap: 10px;
+		  }
+}
+
+main1.flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#main1 .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#right{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: auto;
+}
+
+.grid-project {
+    grid-column: 1/ 4;
+}
+
+.grid-project > div{
+	background-color: rgb(225, 252, 252);
+    padding: 0% 2%;
+    text-align: center;
+}
+
